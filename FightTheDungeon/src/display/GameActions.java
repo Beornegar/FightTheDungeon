@@ -4,7 +4,7 @@ import consumables.HealthPotion;
 import enemies.Enemy;
 import player.Player;
 
-public interface DisplayActions {
+public interface GameActions {
 
 	public void welcomeAction();
 	

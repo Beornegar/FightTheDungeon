@@ -3,7 +3,7 @@ package game;
 import java.util.Random;
 
 import consumables.HealthPotion;
-import display.DisplayActions;
+import display.GameActions;
 import enemies.Enemy;
 import enemies.EnemyFactory;
 import player.Player;
@@ -16,7 +16,7 @@ public class Game {
 
 	private static final Random RAND = new Random();
 	
-	private DisplayActions displayActions;
+	private GameActions displayActions;
 	private UserInput userInput;
 	
 	private Player player;
@@ -27,7 +27,7 @@ public class Game {
 	
 	private boolean gameActive = true;
 	
-	public Game(DisplayActions displayActions, UserInput userInput) {
+	public Game(GameActions displayActions, UserInput userInput) {
 		this.displayActions = displayActions;
 		this.userInput = userInput;
 	}

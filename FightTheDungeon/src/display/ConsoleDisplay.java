@@ -4,7 +4,7 @@ import consumables.HealthPotion;
 import enemies.Enemy;
 import player.Player;
 
-public class ConsoleDisplay implements DisplayActions {
+public class ConsoleDisplay implements GameActions {
 
 	@Override
 	public void welcomeAction() {
