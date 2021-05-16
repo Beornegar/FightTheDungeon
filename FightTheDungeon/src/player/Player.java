@@ -39,6 +39,7 @@ public class Player {
 			pooledExceperience -= experienceToNextLevel;
 			level++;
 			maxHealth += difficulty == Difficulty.EASY ? (maxHealth + 30) : difficulty == Difficulty.MEDIUM ? (maxHealth + 20) : (maxHealth + 10);
+			health = maxHealth;
 			armor += difficulty == Difficulty.EASY ? (armor + 3) : difficulty == Difficulty.MEDIUM ? (armor + 2) : (armor + 1);
 			speed += difficulty == Difficulty.EASY ? (speed + 5) : difficulty == Difficulty.MEDIUM ? (speed + 3) : (speed + 2);
 			maxDamage += difficulty == Difficulty.EASY ? (maxDamage + 15) : difficulty == Difficulty.MEDIUM ? (maxDamage + 10) : (maxDamage + 5);

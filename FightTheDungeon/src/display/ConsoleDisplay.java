@@ -26,7 +26,7 @@ public class ConsoleDisplay implements GameActions {
 		System.out.println();
 		System.out.println("------------------------------------------------------");
 		System.out.println(" # " + enemy.getName() + " was defeated! # ");
-		System.out.println(" # You have " + getHealthString(player) + " left. #");
+		displayPlayerStats(player);
 	}
 
 	@Override
@@ -138,6 +138,7 @@ public class ConsoleDisplay implements GameActions {
 		System.out.println("------------------------------------------------------");
 		System.out.println("\tYou received " + experience + " Experience!");
 		
+		
 	}
 
 	@Override
@@ -151,6 +152,7 @@ public class ConsoleDisplay implements GameActions {
 	}
 	
 	private void displayPlayerStats(Player player) {
+		System.out.println("\tLevel: " + player.getLevel());
 		System.out.println("\t" + getHealthString(player));
 		System.out.println("\tArmor: " + player.getArmor());
 		System.out.println("\tSpeed: " + player.getSpeed());

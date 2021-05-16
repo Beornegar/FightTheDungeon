@@ -25,6 +25,7 @@ public class ConsoleInput implements UserInput {
 				userInput = UserFightInputTypes.RUN;
 			} else {
 				System.out.println(INVALID_INPUT);
+				input = scanner.nextLine();
 			}
 
 		}
@@ -45,6 +46,7 @@ public class ConsoleInput implements UserInput {
 				userInput = UserAfterFightInputTypes.EXIT_DUNGEON;
 			} else {
 				System.out.println(INVALID_INPUT);
+				input = scanner.nextLine();
 			}
 
 		}
@@ -68,6 +70,7 @@ public class ConsoleInput implements UserInput {
 				userInput = Difficulty.HARD;
 			} else {
 				System.out.println(INVALID_INPUT);
+				input = scanner.nextLine();
 			}
 
 		}
